@@ -5,11 +5,15 @@ struct ContentView: View {
     
     @State var locations: [CLLocationCoordinate2D] = []
     @State private var isShowActionSheet: Bool = false
+    @State private var showingAlert = false
+    @State var pointModal: Bool = false
     
     var body: some View {
         ZStack(alignment: .topLeading){
             MapView(locations: $locations) { location in
                 print(location)
+                pointModal = true
+                
             }
             HStack{
                 Button(action: {
@@ -27,7 +31,8 @@ struct ContentView: View {
                 { () -> ActionSheet in ActionSheet(title: Text("新規データ登録"),message: Text("地図に登録するデータの種類を選択してください。"),
                                                    buttons: [
                                                     .default(Text("ポイント"),action: {
-                                                        print("ポイントを選んだ")
+                                                        //                                                        print("ポイントを選んだ")
+                                                        self.showingAlert = true
                                                     }),
                                                     .default(Text("ライン"),action: {
                                                         print("ラインを選んだ")
@@ -39,7 +44,14 @@ struct ContentView: View {
                                                     })
                                                    ])
                 }
-                
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("新規データ登録"), message: Text("新規ポイントをタップしてください。"), dismissButton: .default(Text("説明を閉じる"), action: {}
+                    
+                    
+                    ))}
+                .sheet(isPresented: $pointModal, content: {
+                    PointView()
+                })
                 
                 Button(action: {}) {
                     Image(systemName: "square.stack.3d.up")

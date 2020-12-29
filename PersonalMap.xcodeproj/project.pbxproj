@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		691EA602258F269B00264E0C /* TappableMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691EA601258F269B00264E0C /* TappableMapView.swift */; };
+		69E05740259865B800CB575A /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E0573F259865B800CB575A /* PointView.swift */; };
 		69F36D502584A2770023A1CF /* PersonalMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F36D4F2584A2770023A1CF /* PersonalMapApp.swift */; };
 		69F36D522584A2770023A1CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F36D512584A2770023A1CF /* ContentView.swift */; };
 		69F36D542584A2780023A1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F36D532584A2780023A1CF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		691EA601258F269B00264E0C /* TappableMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableMapView.swift; sourceTree = "<group>"; };
+		69E0573F259865B800CB575A /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
 		69F36D4C2584A2770023A1CF /* PersonalMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F36D4F2584A2770023A1CF /* PersonalMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMapApp.swift; sourceTree = "<group>"; };
 		69F36D512584A2770023A1CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				69F36D4F2584A2770023A1CF /* PersonalMapApp.swift */,
 				69F36D512584A2770023A1CF /* ContentView.swift */,
 				691EA601258F269B00264E0C /* TappableMapView.swift */,
+				69E0573F259865B800CB575A /* PointView.swift */,
 				69F36D532584A2780023A1CF /* Assets.xcassets */,
 				69F36D582584A2780023A1CF /* Info.plist */,
 				69F36D552584A2780023A1CF /* Preview Content */,
@@ -265,6 +268,7 @@
 				691EA602258F269B00264E0C /* TappableMapView.swift in Sources */,
 				69F36D522584A2770023A1CF /* ContentView.swift in Sources */,
 				69F36D502584A2770023A1CF /* PersonalMapApp.swift in Sources */,
+				69E05740259865B800CB575A /* PointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
